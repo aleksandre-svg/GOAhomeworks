@@ -1,0 +1,6 @@
+number_one = int(input("choose number:"))
+number_two = int(input("choose number again:"))
+print(number_one, "+", number_two, "=", number_one + number_two)
+print(number_one, "*", number_two, "=", number_one * number_two)
+print(number_one, "/", number_two, "=", number_one / number_two)
+print(number_one, "-", number_two, "=", number_one - number_two)

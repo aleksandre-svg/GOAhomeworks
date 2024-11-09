@@ -1,0 +1,71 @@
+#facebook {
+    height: 90px;
+    width: 330px;
+    padding-left: 240px;
+}
+
+#Recent {
+    padding-left: 260px;
+    font-size: 60px;
+    padding-bottom: px;
+    font-family: sans-serif;
+}
+.div {
+    padding-left: 260px;
+    font-size: 25px;
+    color: grey;
+    padding-top: 10px;
+}
+.profile {
+    margin-left: 260px;
+    border-radius: 20px;
+}
+
+#divblock {
+    border: 10px black;
+    height: 350px;
+    width: 350px;
+    text-align: left;
+    margin-left: 30px;
+    border-radius: 30px;
+
+}
+
+
+
+.conteiner {
+    margin-left: 307px;
+    font-size: 40px;
+}
+
+
+
+#button1 {
+    margin-left: 250px;
+}
+
+#button2 {
+    margin-left: 18px;
+}
+#button3 {
+    font-size: 45px;
+    margin-left: 1200px;
+    border-radius: 10px;
+    padding-left: 260px;
+    padding-right: 260px;
+    background-color: lightblue;
+}
+
+.input1 {
+    padding-right: 110px;
+    margin-left: 1200px;
+    margin-bottom: 30px;
+    font-size: 45px;
+    border-radius: 25px;
+    background-color: white;
+}
+
+
+form {
+    text-align:center;
+}
