@@ -31,3 +31,14 @@ input#check {
     width: 20px;
     height: 20px;
 }
+
+button {
+    color: rgb(34, 56, 0);
+    font-size: 40px;
+    border-radius: 20px;
+    background-color: blue;
+}
+
+img {
+    border-radius: 20px;
+}
