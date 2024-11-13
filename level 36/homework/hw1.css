@@ -1,4 +1,6 @@
 table {
     border-color: red;
     font-size: 60px;
+    border-collapse: collapse;
+    border-width: 10px;
 }

@@ -1,0 +1,30 @@
+#div1 {
+    border: 10px solid green;
+    width: 400px;
+    height: 400px;
+    background-color: green;
+    border-radius: 1000px;
+    transition: 1s;
+}
+
+#div1:hover {
+    border-radius: 0px;
+}
+
+
+#div2 {
+        width: 0;
+        height: 0;
+        border-left: 100px solid transparent;
+        border-right: 100px solid transparent;
+        border-bottom: 100px solid green;
+        margin: 2rem;
+        transition: 1s;
+}
+#div2:hover {
+    border: 10px solid green;
+    width: 400px;
+    height: 400px;
+    background-color: green;
+    border-radius: 1000px;
+}

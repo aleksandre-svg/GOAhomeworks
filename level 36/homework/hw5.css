@@ -1,0 +1,19 @@
+#table1, td, th {
+    border: 5px solid green;
+    background-color: black;
+    color: white;
+    font-size: 60px;
+}
+
+
+
+.td1 {
+    color: blue;
+}
+.td2 {
+    color: red;
+}
+
+body {
+    background-color: black;
+}

@@ -1,0 +1,33 @@
+h1 {
+    font-size: 60px;
+}
+
+div {
+    width: 60px;
+}
+
+#email {
+    font-size: 50px;
+    border-radius: 30px;
+}
+
+#password {
+    font-size: 50px;
+    border-radius: 30px;
+}
+#submit {
+    font-size: 50px;
+    border-radius: 15px;
+}
+
+label {
+    font-size: 40px;
+}
+#check {
+    width: 50px;
+}
+
+input#check {
+    width: 20px;
+    height: 20px;
+}
