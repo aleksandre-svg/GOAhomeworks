@@ -1,0 +1,14 @@
+button {
+    font-size: 50px;
+    color: blue;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+button:hover {
+    font-size: 70px;
+    color: red;
+}
+button:active {
+    font-size: 90px;
+    color: orange;
+}

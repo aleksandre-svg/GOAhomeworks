@@ -1,0 +1,76 @@
+#head1 {
+    text-align: center;
+    color: rgb(0, 255, 0);
+    transition: 1s;
+}
+
+#head1:hover {
+    font-size: 60px;
+    color: lightblue;
+}
+body {
+    background-color: black;
+}
+
+#p1 {
+    color: white;
+    font-size: 40px;
+    transition: 1s;
+}
+
+#p1:hover {
+    font-size: 60px;
+    color: blue;
+}
+
+ul {
+    color: rgb(255, 0, 0);
+    font-size: 36px;
+    transition: 1s;
+}
+
+ul:hover {
+    font-size: 60px;
+    color: blue;
+}
+
+
+#head2 {
+    color: white;
+    transition: 1s;
+}
+
+#head2:hover {
+    font-size: 50px;
+    color: red;
+}
+a {
+    transition: 1s;
+    font-size: 40px;
+    text-decoration: none;
+    color: aqua;
+}
+#a2:hover {
+    font-size: 60px;
+    text-decoration: underline red;
+}
+
+#a1:hover {
+    font-size: 60px;
+    text-decoration: underline blue;
+}
+
+#footer {
+    color: rgb(39, 38, 38);
+    background-color: grey;
+}
+
+#head3 {
+    font-size: 40px;
+    transition: 1s;
+}
+
+#head3:hover {
+    font-size: 50px;
+    color: blue;
+}

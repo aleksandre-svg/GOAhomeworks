@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+}
+
+header {
+    background-color: #007AFF;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 30px;
+    margin: 0;
+}
+
+.apps {
+    padding: 20px;
+    display: block;
+}
+
+.app {
+    background-color: white;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.app img {
+    width: 100%;
+    max-width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.app h2 {
+    font-size: 20px;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.app p {
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+button {
+    font-size: 16px;
+    background-color: #007AFF;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #007AFF;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+}
