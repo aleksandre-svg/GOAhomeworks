@@ -1,0 +1,96 @@
+#cross {
+    width: 95vw;
+    height: 50vw;
+    position: relative;
+    background: #fff;
+   border: 1px solid #ccc;
+ }
+ 
+ #cross:before, #cross:after,
+ #cross2:before,
+ #cross3:before,
+ #cross4:before,
+ #cross5:before,
+ #cross2:after,
+ #cross3:after,
+ #cross4:after,
+ #cross5:after{
+   content: "";
+   position: absolute;
+   background: #FF0000;
+ }
+ 
+ #cross:before {
+   left: 60%;
+   width: 10%;
+   margin-left: -15%;
+   height: 100%;
+ }
+ 
+ #cross:after{
+   top: 70%;
+   height: 20%;
+   margin-top: -15%;
+   width: 100%;
+ }
+ 
+ #cross2{
+   position:absolute;
+   width: 45%;
+   height: 40%;
+   top:0;
+   left:0;
+   z-index:3;
+ }
+ 
+ #cross3{
+   position:absolute;
+   width: 45%;
+   height: 40%;
+   top:0;
+   right:0;
+   z-index:3;
+ }
+ 
+ #cross4{
+   position:absolute;
+   width: 45%;
+   height: 40%;
+   bottom:0;
+   right:0;
+   z-index:3;
+ }
+ 
+ 
+ #cross5{
+   position:absolute;
+   width: 45%;
+   height: 40%;
+   bottom:0;
+   left:0;
+   z-index:3;
+   
+ }
+ 
+ #cross2:before,
+ #cross3:before,
+ #cross4:before,
+ #cross5:before{
+     left: 60%;
+     top:20%;
+   width: 10%;
+   margin-left: -15%;
+   height: 60%;
+ }
+ 
+ 
+ #cross2:after,
+ #cross3:after,
+ #cross4:after,
+ #cross5:after{
+     top: 73%;
+     left:32%;
+   height: 20%;
+   margin-top: -15%;
+   width: 36%;
+ }
