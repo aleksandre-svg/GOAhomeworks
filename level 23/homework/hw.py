@@ -1,20 +1,15 @@
-print("Lets register")
-register = input("Enter your name: ")
-register2 = input("ENter your last name: ")
-register3 = input("Enter your login word: ")
-register4 = input("Enter your password: ")
-register5 = input("Repeat password: ")
-while register4 != register5:
-    print("Passwords doesnt match")
-    register4 = input("Enter your password: ")
-    register5 = input("Repeat password: ")
-print("Now lets login!")
-login = input("Enter your login: ")
-while login != register3:
-    print("Incorrect login!")
-    login = input("Enter your login: ")
-login1 = input("Enter your password: ")
-while login1 != register4:
-    print("Incorrect password")
-    login1 = input("Enter your password: ")
-print("Wellcome to your account", register, register2)
+sum = 1
+print("Plus")
+for i in range(100):
+    print(sum + i)
+    sum = sum + i
+sum1 = 1
+print('Multiple')
+for i in range(100):
+    print(sum1 * i)
+    sum1 = sum1 + 1
+
+sum2 = 1
+print("Minus")
+for i in range(100):
+    print(sum2 - i)

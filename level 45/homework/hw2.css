@@ -1,0 +1,14 @@
+#div1 {
+    width: 500px;
+    height: 300px;
+    background-color: limegreen;
+    margin-bottom: 700px;
+    margin-left: 900px;
+    margin-top: 100px;
+    padding-left: 300px;
+    padding-bottom: 200px;
+    padding-right: 4px;
+    display: flex;
+    justify-content: center;
+    font-size: 60px;
+}

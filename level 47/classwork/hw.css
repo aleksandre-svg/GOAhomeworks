@@ -1,0 +1,24 @@
+body {
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+}
+
+#maindiv {
+    width: 400px;
+    height: 400px;
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border-radius: 20px;
+    box-shadow:  10px 10px blue;
+}
+
+.div1 {
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    border-radius: 10px;
+}

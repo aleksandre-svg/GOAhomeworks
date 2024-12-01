@@ -1,14 +1,55 @@
 #div1 {
-    width: 500px;
+    width: 300px;
     height: 300px;
-    background-color: limegreen;
-    margin-bottom: 700px;
-    margin-left: 900px;
-    margin-top: 100px;
-    padding-left: 300px;
-    padding-bottom: 200px;
-    padding-right: 4px;
-    display: flex;
-    justify-content: center;
-    font-size: 60px;
+    background-color: green;
 }
+
+#div2 {
+    width: 300px;
+    height: 300px;
+    background-color: rgb(124, 128, 0);
+}
+
+#div3 {
+    width: 300px;
+    height: 300px;
+    background-color: rgb(0, 124, 128);
+}
+
+#div4 {
+    width: 300px;
+    height: 300px;
+    background-color: rgb(0, 21, 128);
+}
+
+#div5 {
+    width: 300px;
+    height: 300px;
+    background-color: rgb(128, 45, 0);
+}
+#div-main1 {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column-reverse;
+}
+
+#div-main2 {
+    display: flex;
+    flex-direction:row;
+}
+
+#div-main3 {
+    display: flex;
+    flex-direction:row-reverse;
+}
+
+#div-main4 {
+    display: flex;
+    flex-direction:inherit
+}
+
+#div-main5 {
+    display: flex;
+    flex-direction:unset;
+}
+
