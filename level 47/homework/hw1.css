@@ -1,0 +1,31 @@
+#div1 {
+    width: 500px;
+    height: 500px;
+    background-color: green;
+    display: flex;
+}
+.div2 {
+    width: 60px;
+    height: 60px;
+    background-color: rgb(255, 0, 0);
+    border: 5px solid black;
+    position: relative;
+    left: 75px;
+    top: 200px;
+}
+
+#div3 {
+    width: 500px;
+    height: 500px;
+    background-color: green;
+}
+
+.div4 {
+    width: 60px;
+    height: 60px;
+    background-color: rgb(255, 0, 0);
+    border: 5px solid black;
+    position: relative;
+    top: 80px;
+    left: 200px;
+}

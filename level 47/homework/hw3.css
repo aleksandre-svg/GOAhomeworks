@@ -1,0 +1,10 @@
+#div1 {
+    width: 400px;
+    height: 400px;
+    background-color: cyan;
+    display: flex;
+    justify-content: center;
+    position:absolute;
+    left: 600px;
+    top: 200px;
+}

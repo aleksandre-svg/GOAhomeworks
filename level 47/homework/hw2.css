@@ -1,0 +1,11 @@
+ul {
+    display: flex;
+    list-style: none;
+    position: relative;
+    top: 20px;
+}
+
+#div1 {
+    display: flex;
+    justify-content: space-around;
+}
