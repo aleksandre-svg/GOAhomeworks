@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Positioning Explained</title>
+    <link rel="stylesheet" href="hw4.css">
+</head>
+<body>
+    <header>
+        <h1>CSS Positioning Explained</h1>
+        <p>Learn how different position values work in CSS.</p>
+    </header>
+
+    <section class="container">
+        <h2>Position: Static</h2>br
+        <div class="box static-box">
+            <p>Position: static (default)</p>
+        </div>
+        <p>By default, all elements are positioned statically. This means they are positioned according to the normal flow of the document.</p>
+    </section>
+
+    <section class="container">
+        <h2>Position: Relative</h2>
+        <div class="box relative-box">
+            <p>Position: relative (offset relative to its normal position)</p>
+        </div>
+        <div class="box relative-offset-box">
+            <p>Position: relative with offset</p>
+        </div>
+        <p>Position relative allows you to move an element relative to its normal position using the top, right, bottom, and left properties.</p>
+    </section>
+
+    <section class="container">
+        <h2>Position: Absolute</h2>
+        <div class="box absolute-box">
+            <p>Position: absolute (positioned relative to the nearest positioned ancestor)</p>
+        </div>
+        <div class="relative-container">
+            <div class="box absolute-inside-box">
+                <p>Position: absolute inside relative</p>
+            </div>
+        </div>
+        <p>Absolute positioning removes an element from the normal flow and positions it relative to its nearest positioned ancestor.</p>
+    </section>
+
+    <section class="container">
+        <h2>Position: Fixed</h2>
+        <div class="box fixed-box">
+            <p>Position: fixed (fixed on the screen, independent of scrolling)</p>
+        </div>
+        <p>Fixed positioning allows an element to be fixed in place on the screen even when the page is scrolled.</p>
+    </section>
+
+    <section class="container">
+        <h2>Position: Sticky</h2>
+        <div class="box sticky-box">
+            <p>Position: sticky (scrolls with the page until a certain point)</p>
+        </div>
+        <p>Sticky positioning allows an element to scroll with the page until it reaches a defined position, where it then becomes "stuck" in place.</p>
+    </section>
+
+
+</body>
+</html>

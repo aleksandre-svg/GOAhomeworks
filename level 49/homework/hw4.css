@@ -1,0 +1,114 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+header h1 {
+    font-size: 40px;
+    color: #4CAF50;
+}
+
+header p {
+    font-size: 20px;
+}
+
+.container {
+    margin-bottom: 30px;
+}
+
+.container h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.box {
+    width: 300px;
+    height: 150px;
+    background-color: #e0e0e0;
+    border: 2px solid #ccc;
+    text-align: center;
+    padding: 20px;
+    margin: 20px;
+    font-size: 18px;
+    position: relative;
+}
+
+.static-box {
+    position: static;
+    background-color: #8bc34a;
+    color: white;
+}
+
+.relative-box {
+    position: relative;
+    top: 30px;
+    left: 30px;
+    background-color: #ff9800;
+    color: white;
+}
+
+.relative-offset-box {
+    position: relative;
+    top: 50px;
+    left: 50px;
+    background-color: #3f51b5;
+    color: white;
+}
+
+.absolute-box {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    background-color: #2196F3;
+    color: white;
+}
+
+.relative-container {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    border: 2px solid #000;
+    margin-top: 30px;
+}
+
+.absolute-inside-box {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: #f44336;
+    color: white;
+}
+
+.fixed-box {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background-color: #f44336;
+    color: white;
+}
+
+.sticky-box {
+    position: sticky;
+    top: 0;
+    background-color: #9c27b0;
+    color: white;
+}
+
+footer {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 16px;
+    color: #777;
+}
+
+footer p {
+    margin-top: 20px;
+}

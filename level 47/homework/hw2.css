@@ -8,4 +8,9 @@ ul {
 #div1 {
     display: flex;
     justify-content: space-around;
+    background-color: blue;
+}
+
+ul li {
+    padding-left: 20px;
 }
