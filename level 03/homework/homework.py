@@ -1,1 +1,3 @@
-# no homework
+hello = 'hello'
+niga = 'nigger'
+print(hello, niga)
