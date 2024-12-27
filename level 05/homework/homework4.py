@@ -47,7 +47,6 @@ right(90)
 forward(200)
 end_fill()
 
-
 penup()
 right(90)
 forward(200)
