@@ -1,1 +1,158 @@
-/*ჩვენ ბქოს მოდელები ვისწავლეთ, ბოქს მოდელი არის რაიმე ელემენტის სტრქურტურა ანუ აგებულება, margin padding contect, margin-ბორდერის გარედან დაშორება padding-კონტენტის და ბორდერის დაშორება content-როგორც სიტყვა გვეუბნება რაიმე ელმენტში მოცემულოი ინფორმაცია ნუ კონტენტი
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f1f1f1;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #3498db;
+    padding: 40px;
+    text-align: center;
+    margin-bottom: 50px;
+    border-radius: 10px;
+}
+
+.header-container h1 {
+    color: #fff;
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.header-container p {
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+.intro, .box-model-explanation, .box-model-demo, .box-sizing {
+    padding: 40px 10%;
+    margin-bottom: 50px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: none;
+    margin-left: 20px;
+}
+
+li {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 2rem;
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+.box-example {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: #e74c3c;
+    padding: 20px;
+    border: 5px solid #2c3e50;
+    margin-right: 30px;
+}
+
+.content {
+    font-size: 1.1rem;
+    color: #fff;
+    text-align: center;
+}
+
+.description {
+    width: 45%;
+}
+
+.box-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.box-with-padding {
+    background-color: #e74c3c;
+    padding: 30px;
+    color: #fff;
+    margin: 10px;
+}
+
+.box-with-border {
+    background-color: #2ecc71;
+    border: 10px solid #27ae60;
+    padding: 20px;
+    color: #fff;
+    margin: 10px;
+}
+
+.box-with-margin {
+    background-color: #9b59b6;
+    color: #fff;
+    margin: 40px;
+    padding: 20px;
+}
+
+.box-sizing-example {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.content-box, .border-box {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 1.1rem;
+    margin: 10px;
+}
+
+.content-box {
+    background-color: #f39c12;
+    padding: 20px;
+    border: 5px solid #2c3e50;
+}
+
+.border-box {
+    background-color: #3498db;
+    padding: 20px;
+    border: 5px solid #2c3e50;
+    box-sizing: border-box;
+}
+
+footer {
+    background-color: #34495e;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    margin-top: 50px;
+    border-radius: 8px;
+}
+
+.footer-container p {
+    font-size: 1rem;
+}

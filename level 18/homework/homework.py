@@ -27,7 +27,7 @@ while True:
              print("your balance:", balance, "your debt:", krediti)
              bank = int(input("choose an option:1.withdraw money 2.Deposit money 3.get credit 4.Credit repayment"))
         if bank == 4 and krediti > 0: # კრედიტის გადახდა
-                repayment = int(input("how much:"))ы66язз
+                repayment = int(input("how much:"))
                 krediti = krediti - repayment
                 if krediti > 0:
                      print("your balance:", balance, "your debt:", krediti)

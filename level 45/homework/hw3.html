@@ -1,1 +1,98 @@
-<!--ჩვენ ბქოს მოდელები ვისწავლეთ, ბოქს მოდელი არის რაიმე ელემენტის სტრქურტურა ანუ აგებულება, margin padding contect, margin-ბორდერის გარედან დაშორება padding-კონტენტის და ბორდერის დაშორება content-როგორც სიტყვა გვეუბნება რაიმე ელმენტში მოცემულოი ინფორმაცია ნუ კონტენტი-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn CSS Box Model</title>
+    <link rel="stylesheet" href="hw3.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <h1>Learn the CSS Box Model</h1>
+            <p>The CSS Box Model is a fundamental concept in web design. It defines how elements are structured and spaced on a webpage.</p>
+        </div>
+    </header>
+
+    <section class="intro">
+        <div class="container">
+            <h2>What is the Box Model?</h2>
+            <p>The Box Model is a way of understanding how HTML elements are rendered on a page. Every element on a webpage is represented as a box. This box consists of several parts:</p>
+            <ul>
+                <li><strong>Content</strong> – The actual content of the box, such as text or images.</li>
+                <li><strong>Padding</strong> – The space between the content and the border of the box.</li>
+                <li><strong>Border</strong> – A line surrounding the padding (and content). This is optional.</li>
+                <li><strong>Margin</strong> – The space outside the border that separates the box from other elements.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="box-model-explanation">
+        <div class="container">
+            <h2>Box Model Breakdown</h2>
+            <p>Let's break down the Box Model and see how each part affects the size and layout of an element.</p>
+
+            <div class="box-example">
+                <div class="box">
+                    <p class="content">Content</p>
+                </div>
+                <div class="description">
+                    <h3>Explanation:</h3>
+                    <p>This box contains four parts:</p>
+                    <ul>
+                        <li><strong>Content:</strong> The area where text or images appear.</li>
+                        <li><strong>Padding:</strong> Adds space around the content inside the box.</li>
+                        <li><strong>Border:</strong> Surrounds the padding (and content), making the box visible.</li>
+                        <li><strong>Margin:</strong> Adds space outside the border, separating the box from other elements.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="box-model-demo">
+        <div class="container">
+            <h2>Visualizing the Box Model</h2>
+            <p>Here are some visual examples to show how padding, border, and margin affect the box size.</p>
+
+            <div class="box-container">
+                <div class="box-with-padding">
+                    <p>Content with Padding</p>
+                </div>
+                <div class="box-with-border">
+                    <p>Content with Border</p>
+                </div>
+                <div class="box-with-margin">
+                    <p>Content with Margin</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="box-sizing">
+        <div class="container">
+            <h2>The `box-sizing` Property</h2>
+            <p>The default box model in CSS is known as the <strong>Content-box</strong> model. However, you can change this behavior using the <code>box-sizing</code> property.</p>
+            <p><strong>content-box</strong>: The default setting. The width and height apply only to the content, excluding padding and borders.</p>
+            <p><strong>border-box</strong>: The width and height apply to the entire box, including padding and borders.</p>
+
+            <div class="box-sizing-example">
+                <div class="content-box">
+                    <p>Content Box (default)</p>
+                </div>
+                <div class="border-box">
+                    <p>Border Box</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <p>CSS Box Model</p>
+        </div>
+    </footer>
+
+</body>
+</html>
