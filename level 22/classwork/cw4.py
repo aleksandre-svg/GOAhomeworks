@@ -1,5 +1,5 @@
-name = input("Your name: ")
-while name != "svarchika mayvala":
-    print("You arent svarchika go away")
-    name = input("Your name: ")
-print("WEllcome to hone")
+password = input('What is your password nigga: ')
+while password != "Jimshera":
+    print("Incorrect, you arent nigga")
+    password = input('What is your password nigga: ')
+print("Wellcome to your account")
