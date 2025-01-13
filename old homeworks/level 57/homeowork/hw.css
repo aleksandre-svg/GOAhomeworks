@@ -1,0 +1,120 @@
+#div1 {
+    background-color: rgb(76, 0, 255);
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 450px;
+    transform: translate(28px);
+}
+#div1-1 {
+    background-color: blue;
+    border-radius: 50%;
+    width: 170px;
+    height: 170px;
+    align-self: center;
+    transform: translate(0, 30px);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    height: 98.5vh;
+    align-items: center;
+    font-family: sans-serif;
+}
+
+#h1 {
+    color: rgba(255, 255, 255, 0.411);
+    font-size: 20px;
+}
+
+#h2 {
+    color: white;
+    font-size: 60px;
+    height: 40px;
+}
+
+#p1 {
+    color: rgba(255, 255, 255, 0.384);
+}
+
+#h3 {
+    color: white;
+}
+
+#p2 {
+    color: rgba(255, 255, 255, 0.438);
+    font-size: 20px;
+}
+
+#div2 {
+    background-color: rgb(225, 228, 250);
+    width: 370px;
+    height: 450px;
+    border-radius: 15px;
+}
+
+#div-main {
+    display: flex;
+}
+
+#h4 {
+    color: black;
+    margin-left: 34px;
+    font-size: 27px;
+    margin-top: 28px;
+}
+
+
+.div-react {
+    font-size: 25px;
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    border-radius: 15px;
+    height: 50px;
+    align-items: center;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-left: 28px;
+}
+
+#div2-1 {
+    background-color: rgba(255, 0, 0, 0.247);
+    color: #D3676B;
+    background-color: #ff4a3646;
+}
+
+#div2-2 {
+    background-color: rgba(255, 251, 0, 0.329);
+    color: #E8BF76;
+}
+
+#div2-3 {
+    background-color: rgba(2, 197, 197, 0.527);
+    color: #2BB492;
+}
+
+#div2-4 {
+    background-color: rgba(9, 9, 161, 0.199);
+    color: #4049C2;
+}
+
+#button-div {
+    background-color: rgb(7, 11, 44);
+    color: white;
+    margin-top: 15px;
+    width: 260px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#button-div:hover {
+    background-color: rgb(15, 15, 107);
+}
