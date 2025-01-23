@@ -1,0 +1,22 @@
+#div1 {
+    width: 500px;
+    height: 500px;
+    background-color: red;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-name: Changecolor;
+    animation-duration: 5s;
+}
+
+@keyframes Changecolor {
+    from {
+        background-color: crimson;
+    }
+
+    to {
+        background-color: blue;
+        transform: rotate(360deg);
+    }
+}
