@@ -1,6 +1,7 @@
 {
     "recommendations": [
         
-        "ms-vscode.live-server"
+        "ms-vscode.live-server",
+        "zolardev.js-runner"
     ]
 }

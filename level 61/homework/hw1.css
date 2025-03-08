@@ -639,3 +639,9 @@ body {
         gap: 20px;
     }
 }
+
+@media (max-width: 400px) {
+    #div-main3 img, #div-main4 img, #div-main5 img {
+        width: 100%;
+    }
+}
