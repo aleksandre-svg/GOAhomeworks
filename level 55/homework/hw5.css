@@ -97,4 +97,19 @@ body{
 
 .p3{
     font-weight: 650;
-    color: #7165f2;}
+    color: #7165f2;
+}
+
+.bt {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    background-color: #382ae1;
+    border: none;
+    border-radius: 12px;
+    color: white;
+    font-size: 17px;
+    cursor: pointer;
+}
