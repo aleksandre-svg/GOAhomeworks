@@ -18,7 +18,6 @@ left(90)
 forward(100)
 end_fill()
 
-
 left(180)
 penup()
 forward(100)

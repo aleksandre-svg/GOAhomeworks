@@ -116,7 +116,8 @@
 
 #car {
     width: 100%;
-    height: auto;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 #rects {
@@ -824,6 +825,9 @@
 }
 
 @media (max-width: 1513px) {
+    #car {
+        height: 400px;
+    }
     #contact1 {
         display: flex;
         justify-content: center;
@@ -833,13 +837,11 @@
         bottom: 100px;
     }
     #rect1 {
-        width: 64px;
-        height: 716px;
+        display: none;
     }
 
     #rect2 {
-        width: 66px;
-        height: 716px;
+        display: none;
     }
 
     #div-content img {

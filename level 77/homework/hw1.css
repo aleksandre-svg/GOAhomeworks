@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+#nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 120px;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    border-top: 1px solid gray;
+}
+
+#nav-ul {
+    list-style-type: none;
+    display: flex;
+    gap: 50px;
+}
+
+#nav h1 {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 137%;
+    letter-spacing: 0%;
+}
+
+#nav-ul li {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 137%;
+    letter-spacing: 0%;
+    color: #000000BF;
+}
+
+#toor {
+    color: #FFA03F;
+}
+
+#div-main1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 170px;
+    margin-top: 50px;
+}
+
+#div-content1 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 55px;
+}
+
+#div-content1 h1 {
+    font-family: Inter;
+    font-weight: 700;
+    font-size: 100px;
+    line-height: 153%;
+    letter-spacing: 0%;
+}
+
+#lets {
+    text-decoration: underline 7px;
+    text-decoration-color: #FFA03F;
+}
+
+#div-content1 p {
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 137%;
+    letter-spacing: 0%;
+    color: #000000BF;
+}
+
+#div-images1 {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+
+#div-images-first-line {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+@media (max-width: 1009px){
+    #li1, #li2, #li3, #li4 {
+        display: none;
+    }
+}
+
+@media (max-width: 717px){
+    #div-images-first-line img, #div-images1 img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 523px){
+    #div-content1 {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    #div-content1 h1 {
+        font-size: 50px;
+    }
+}
