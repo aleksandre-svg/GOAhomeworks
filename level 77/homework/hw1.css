@@ -647,6 +647,115 @@ input[type="email"]{
     margin-top: 140px;
 }
 
+#footer1 {
+    display: flex;
+    background-color: #FFA03F;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    color: #fff;
+    margin-top: 100px;
+}
+
+#footer1-div1 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 35px;
+}
+
+#footer1-div1 h1 {
+    font-family: Inter;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 137%;
+    letter-spacing: 0%;
+}
+
+#footer1-div1 p {
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 137%;
+    letter-spacing: 0%;
+}
+
+#footer1-div1-div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+#footer1-div2 h1{
+    font-family: Inter;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 137%;
+    letter-spacing: 0%;
+}
+
+#footer1-div2 ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: #FFFFFFBF;
+    font-family: Inter;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 150%;
+    letter-spacing: 0%;
+}
+
+#footer1-div3 h1{
+    font-family: Inter;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 137%;
+    letter-spacing: 0%;
+}
+
+#footer1-div3-main {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 23px;
+}
+
+#footer1-div3-div1, #footer1-div3-div2 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 23px;
+}
+
+#footer1-div4 h1{
+    font-family: Inter;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 137%;
+    letter-spacing: 0%;    
+}
+
+#footer1-div4 ul {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+#footer1-div4 ul li {
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 137%;
+    letter-spacing: 0%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#footer1 {
+    padding: 100px;
+}
+
 @media (max-width: 1009px){
     #li1, #li2, #li3, #li4 {
         display: none;
@@ -783,5 +892,27 @@ input[type="email"]{
         width: 100%;
         text-align: center;
 
+    }
+}
+
+@media (max-width: 770px){
+    #contact1 {
+        width: 100%;
+    }
+}
+
+@media (max-width: 390px){
+    #contact1 {
+        flex-wrap: wrap;
+        height: auto;
+    }
+    input[type="email"]::placeholder {
+        text-align: center;
+    }
+}
+
+@media (max-width: 1003px){
+    #footer1 {
+        gap: 100px;
     }
 }
