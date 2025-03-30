@@ -1,8 +1,5 @@
-let arrow1 = document.getElementById("arrow")
-let arrow2 = document.getElementById("arrow1")
 let arr = ["images/image (7).png", "images/image (8).png", "images/image (9).png", "images/image (10).png", "images/image (11).png", "images/image (12).png"]
 let count = 0
-
 function changeImg(){
     if (count<6){
         let img = document.getElementById("car1")

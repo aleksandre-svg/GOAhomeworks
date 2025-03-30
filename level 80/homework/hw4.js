@@ -11,4 +11,4 @@ function myFunc(){
         alert("Input fields cannot be empty.")
     }
     return false
-} 
+}
