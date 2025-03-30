@@ -12,4 +12,6 @@ changer.addEventListener('click', function(){
     span.style = `color: ${color}`
     span.textContent = color
     header.style = "background-color: white;"
+    let newSound = new Audio("mixkit-classic-car-horn-1565.wav")
+    newSound.play()
 })
