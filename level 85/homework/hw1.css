@@ -9,6 +9,7 @@ body {
     background-color: #2a314b;
     display: flex;
     justify-content: center;
+    flex-direction: column;
 }
 
 h1 {
@@ -86,4 +87,15 @@ div {
 
 p {
     text-shadow: 2px 2px white;
+}
+
+#prem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+    background-color: gold;
+    padding: 50px;
+    border: 5px solid green;
+    cursor: pointer;
 }
