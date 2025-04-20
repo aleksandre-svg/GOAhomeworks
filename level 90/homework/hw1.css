@@ -3,9 +3,9 @@ body {
     padding: 0;
     min-height: 100vh;
     background: #333;
-
     font-family: sans-serif;
     background-color: #f1f1f1; 
+    overflow-x: hidden;
 }
 
 #nav {
@@ -41,13 +41,13 @@ body {
     width: 100%;
     position: relative;
     display: flex;
-    justify-content: center;
+    justify-content: start;
     flex-wrap: wrap;
     gap: 30px;
     display: flex;
-    justify-content: center;
     align-items: center;   
     margin-top: 200px;
+    max-width: 1320px;
 }
 
 .container .card {
@@ -69,9 +69,6 @@ body {
 .container .card.icon {
     background: #e07768;
 }
-
-
-
 
 .container .card .icon .fa {
     position: absolute;
@@ -175,11 +172,77 @@ button {
     color: #414141;
 }
 
+#shopcart {
+    width: 400px;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 9999;
+    transform: translate(400px); 
+    transition: transform 0.5s;
+    color: black;
+    border-bottom: 1px solid black;
+    overflow: scroll;
+}
+
+#closebut {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 10px;
+    z-index: 289023480923;
+}
+
+#info {
+    padding: 20px;
+}
+
+#shoph1 {
+    margin-left: 20px;
+}
+
+#shopcart p {
+    font-size: 19px;
+}
+
+.card1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    border-bottom: 1px solid black;
+    flex-wrap: wrap;
+}
+
+#info {
+    position: sticky;
+    background-color: #fff;
+    z-index: 9999;
+    border-bottom: 1px solid black;
+    top: 0;
+}
+
+.card1 h1 {
+    font-size: 18px;
+}
+
+.card1 img {
+    width: 200px;
+}
+
 @media (max-width: 513px){
     #dis {
         display: none;
     }
     #cart {
         width: 40px;
+    }
+}
+
+@media (max-width: 451px){
+    #shopcart {
+        width: 300px;
     }
 }
