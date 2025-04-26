@@ -19,3 +19,5 @@ def digital_root(n):
         new_list_two.clear()
         new_list_two.append(sum(b))
     return int(new_list_two[0])
+
+print(digital_root(9119))
