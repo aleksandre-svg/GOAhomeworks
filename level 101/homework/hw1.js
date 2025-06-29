@@ -27,7 +27,6 @@ btn.addEventListener("click", (e)=>{
 })
 
 for (let element of dlt){
-    let dlt = document.getElementsByClassName("delete-btn")
     element.addEventListener("click", (e)=>{
         element.parentElement.remove()
     })
