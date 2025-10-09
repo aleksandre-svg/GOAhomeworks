@@ -4,7 +4,6 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    flex-wrap: wrap;
 }
 
 #ul1 {
@@ -70,13 +69,4 @@
     font-size: 17px;
     font-weight: 400;
     cursor: pointer;
-}
-
-@media (max-width: 1060px) {
-    #div-main {
-        flex-direction: column;
-    }
-    #div-content {
-        text-align: center;
-    }
 }
