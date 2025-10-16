@@ -1,25 +1,32 @@
-import React, { useState } from "react";
+import  { useState } from "react"
+function CardForm() {
+    const [formData, setFormData] = useState({ name: "", num: "", year: "", cvc: "" })
+    const [submitted, setSubmitted] = useState(false)
 
-export default function CardForm() {
-    const [formData, setFormData] = useState({ name: "", num: "", year: "", cvc: "" });
-    const [submitted, setSubmitted] = useState(false);
+    const handleChange = (e) => {
+        setFormData({ ...formData, [e.target.id]: e.target.value })
+    }
 
-    const handleChange = e => setFormData({ ...formData, [e.target.id]: e.target.value });
-
-    const handleSubmit = e => {
-        e.preventDefault();
-        const nums = ["1","2","3","4","5","6","7","8","9","0"," "];
-        const valid = [];
-        for (let ch of formData.num) valid.push(nums.includes(ch));
-        valid.push(formData.cvc.length === 3);
-        if (valid.includes(false)) alert("You have filled the form incorrectly");
-        else setSubmitted(true);
-    };
+    const handleSubmit = (e) => {
+        e.preventDefault()
+        const nums = ["1","2","3","4","5","6","7","8","9","0"," "]
+        const valid = []
+        for (let ch of formData.num) {
+            valid.push(nums.includes(ch))
+        }
+        valid.push(formData.cvc.length === 3)
+        if (valid.includes(false)) {
+            alert("You have filled the form incorrectly")
+        }
+        else {
+            setSubmitted(true)
+        }
+    }
 
     const handleBack = () => {
-        setSubmitted(false);
-        setFormData({ name: "", num: "", year: "", cvc: "" });
-    };
+        setSubmitted(false)
+        setFormData({ name: "", num: "", year: "", cvc: "" })
+    }
 
     return (
         <div className="min-h-screen flex flex-wrap items-center justify-center font-inter text-[#220930]">
@@ -58,3 +65,5 @@ export default function CardForm() {
         </div>
     )
 }
+
+export default CardForm
