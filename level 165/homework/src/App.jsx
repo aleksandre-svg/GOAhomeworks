@@ -5,6 +5,9 @@ import Hero from './Hero'
 import Item from './Item'
 import NewArrivals from './NewArrivals'
 import TopSelling from './TopSelling'
+import BrowseByDressStyle from './BrowseByDressStyle'
+import OurHappyCostumers from './OurHappyCostumers'
+import Footer from './Footer'
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
 
 function App() {
@@ -48,6 +51,9 @@ function App() {
         <Hero/>
         <NewArrivals/>
         <TopSelling/>
+        <BrowseByDressStyle/>
+        <OurHappyCostumers/>
+        <Footer/>
         </>
       }/>
       <Route path="/shop" element={<Item />} />

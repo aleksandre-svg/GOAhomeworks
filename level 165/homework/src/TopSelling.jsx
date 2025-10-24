@@ -16,7 +16,6 @@ function TopSelling() {
             </div>
             <div className='flex justify-center gap-[20px] mt-[40px] flex-col items-center gap-[70px]'>
                 <button className='w-[258px] h-[52px] rounded-[62px] border border-[#0000001A] font-[500]'>View All</button>
-                <img src="/images/line.png" alt="" />
             </div>
         </div>
         </>
