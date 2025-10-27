@@ -1,7 +1,8 @@
-import { useState } from 'react'
+import { use, useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 function Item() {
+    const [count, setCount] = useState(1)
 
     return (
         <>
@@ -60,9 +61,9 @@ function Item() {
                 </div>
                 <div className='flex gap-[17px]'>
                     <section className='w-[170px] h-[52px] bg-[#F0F0F0] flex items-center justify-evenly rounded-[62px] max-sm:w-[40%]'>
-                        <p className='text-[40px]'>-</p>
-                        <p>1</p>
-                        <p className='text-[40px]'>+</p>
+                        <p className='text-[40px]' onClick={()=>setCount(count-1)}>-</p>
+                        <p>{count}</p>
+                        <p className='text-[40px]' onClick={()=>setCount(count+1)}>+</p>
                     </section>
                     <button className='w-[400px] h-[52px] py-[16px] px-[54px] bg-black rounded-[62px] text-white max-sm:w-[60%]'>Add to Cart</button>
                 </div>
