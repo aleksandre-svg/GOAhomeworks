@@ -32,7 +32,8 @@ function NewArrivals({title, info}) {
 
     useEffect(() => {
         if (chosenItem){
-            console.log(chosenItem)
+            // console.log(chosenItem)
+            null
         }
     }, [chosenItem])
 

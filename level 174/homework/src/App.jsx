@@ -17,21 +17,7 @@ export const itemContext = createContext()
 
 function App() {
   const [chosenItem, setChosenItem] = useState([
-    {
-        mainImgSrc: "http:asfafasf//img-main-1.jpg",
-        imgList: ["id1-1.png", "id1-2.jpg"],
-        title: "Premium Jeans for Gym Look",
-        rate: 5,
-        price: 124,
-        discount: 174,
-        dressStyle: "Gym",
-        clothesType: "Jeans",
-        desc: "Featuring unique details and a relaxed fit, this jeans is the definition of gym fashion.",
-        colorList: ["maroon", "teal"],
-        sizeList: ["small", "medium", "large", "x-large"],
-        reviews: [],
-        id: 1
-    }
+ 
   ])
   const [info, setInfo] = useState([])
 

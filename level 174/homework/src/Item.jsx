@@ -6,21 +6,27 @@ import viteLogo from '/vite.svg'
 import { useEffect } from 'react'
 
 function Item() {
+
     const {chosenItem, setChosenItem} = useContext(itemContext)
     const [count, setCount] = useState(1)
+    const [chosenColor, setChosenColor] = useState(0)
+    let arr = []
     useEffect(() => {
         if (chosenItem){
-            console.log(chosenItem)
+            
+            // console.log(chosenItem)
             // console.log(typeof chosenItem.imgList[0])
         }
     }, [chosenItem])
-
+    for (let i = 0; i < Math.floor(chosenItem.rate); i++){
+        arr.push(0)
+    }
     return (
         <>
         <img src="/images/border.png" alt="" className='block mx-auto'/><br />
         <div className='flex justify-center w-[full] gap-[25px] flex-wrap'> 
             <div>
-                <h1 className='text-[#00000099] flex items-center gap-[10px] max-sm:ml-[20px]'>
+                <h1 className='text-[#00000099] flex items-center gap-[10px] max-sm:ml-[20px] '>
                 Home 
                 <i className="fa-solid fa-chevron-right text-[#00000099]"></i> 
                 Shop 
@@ -41,20 +47,29 @@ function Item() {
                     </section>
                     { 
                         chosenItem.imgList ? 
-                        <img src={`images/clothes/${chosenItem.imgList[0]}`} alt="" className='max-sm:w-full ' /> : null
+                        <img src={`images/clothes/${chosenItem.imgList[chosenColor]}`} alt="" className='max-sm:w-full  w-[300px] h-auto h object-fit' /> : null
                         }
                 </div>
             </div>
             <div className='w-[590px] flex flex-col justify-between max-sm:px-[15px]'><br />
                 <h1 className='text-[40px] font-[900] max-sm:max-w-[247px] max-sm:text-[24px]'>{chosenItem.title}</h1>
                 <div className='flex items-center gap-3 max-sm:w-[105px] max-sm:h-[18px]'>
-                    <img src="/images/stars.png" alt="" />
-                    <p>4.5/5</p>
+                    <section>
+                        {
+                        arr.map((_, index) => {
+                            return <i className="fa-solid fa-star text-[#FFD43B]" key={index}></i>
+                        })
+                        }
+                        {
+                            chosenItem.rate % 1 !== 0 ? <i className="fa-solid fa-star-half text-[#FFD43B]"></i> : null
+                        }
+                    </section>
+                    <p>{chosenItem.rate}/5</p>
                 </div>
                 <div className='flex gap-[15px] items-center'>
                     <h1 className='text-[32px] flex gap-[15px]'>
-                        <span className='font-[700] max-sm:text-[24px]'>${chosenItem.discount}</span>
-                        <span className='font-[500] text-[#0000004D] line-through max-sm:text-[24px]'>${chosenItem.price}</span>
+                        <span className='font-[700] max-sm:text-[24px]'>${chosenItem.price}</span>
+                        <span className='font-[500] text-[#0000004D] line-through max-sm:text-[24px]'>${chosenItem.discount}</span>
                     </h1>
                     <div className='bg-[#FF33331A] w-[72px] h-[34px] rounded-[62px] font-[400] flex items-center justify-center text-[#FF3333]'>
                         -40%
@@ -64,18 +79,38 @@ function Item() {
                 <div className='flex flex-col gap-[5px] border-b border-t w-full border-[#0000001A] py-[15px]'>
                     <p className='text-[#00000099]'>Select Colors</p>
                     <section className='flex gap-[16px]'>
-                        <div className='w-[37px] h-[37px] rounded-[50%] bg-[#4f4631]'></div>
+                        {/* <div className='w-[37px] h-[37px] rounded-[50%] bg-[#4f4631]'></div>
                         <div className='w-[37px] h-[37px] rounded-[50%] bg-[#314f4a]'></div>
-                        <div className='w-[37px] h-[37px] rounded-[50%] bg-[#31344f]'></div>
+                        <div className='w-[37px] h-[37px] rounded-[50%] bg-[#31344f]'></div> */}
+                        {
+                            (chosenItem.colorList).map((item, index) => {
+                                console.log(item)
+                                return <div className={`w-[37px] h-[37px] rounded-[50%] white border cursor-pointer`}
+                                key={index}
+
+                                style={{backgroundColor: item}}
+
+                                onClick={() => {
+                                    setChosenColor(index)
+                                }}
+                                ></div>
+                                
+                            })
+                        }
                     </section>
                 </div>
                 <div className='flex flex-col gap-[5px] border-b  w-full border-[#0000001A] py-[15px]'>
                     <p className='text-[#00000099]'>Choose Size</p>
                     <section className='flex gap-[16px]'>
-                            <button className='w-[86px] h-[46px] bg-[#F0F0F0] rounded-[62px] text-[#00000099] max-sm:w-full'>Small</button>
+                            {/* <button className='w-[86px] h-[46px] bg-[#F0F0F0] rounded-[62px] text-[#00000099] max-sm:w-full'>Small</button>
                             <button className='w-[86px] h-[46px] bg-[#F0F0F0] rounded-[62px] text-[#00000099] max-sm:w-full'>Medium</button>
                             <button className='w-[86px] h-[46px] bg-[#F0F0F0] rounded-[62px] bg-[black] text-white max-sm:w-full'>Large</button>
-                            <button className='w-[86px] h-[46px] bg-[#F0F0F0] rounded-[62px] text-[#00000099] max-sm:w-full'>X-Large</button>
+                            <button className='w-[86px] h-[46px] bg-[#F0F0F0] rounded-[62px] text-[#00000099] max-sm:w-full'>X-Large</button> */}
+                            {
+                                (chosenItem.sizeList).map((item, index) => {
+                                    return <button className='w-[86px] h-[46px] bg-[#F0F0F0] rounded-[62px] text-[#00000099] max-sm:w-full' key={index}>{item[0].toUpperCase()+item.slice(1)}</button>
+                                })
+                            }
                     </section>
                 </div>
                 <div className='flex gap-[17px]'>
